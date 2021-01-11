@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#sideBar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background-color: black;
+	transition: 1000ms;
+	left: -200px;
+}
+
+#sideBar.active {
+	left: 0px;
+}
+
+#sideBar ul li {
+	color: white;
+	padding: 15px 10px;
+	font-family: arial;
+	border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+
+#sideBar .toggle-btn {
+	width: 60px;
+	height: 60px;
+	background: url(https://i.ibb.co/HrfVRcx/menu.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	left: 210px;
+	transition: 500ms;
+}
+
+#sideBar .toggle-btn.active {
+	background: url(https://i.ibb.co/rt3HybH/menu.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+
+#Title {
+	text-align: center;
+	font-size: 50;
+	padding-top: 20px;
+}
+
+#body.active {
+	background-color: green;
+	transition: 1000ms;
+}

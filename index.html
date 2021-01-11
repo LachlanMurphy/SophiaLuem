@@ -2,8 +2,28 @@
 <html>
 <head>
 	<title>Sohpia Luem</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body style="background-color: lightblue; text-align: center; justify-content: center;">
-	<h1>Hello! My name is Sophia.</h1>
+<body style="background-color: grey;" id="body">
+	<div id="sideBar">
+		<div class="toggle-btn" onclick="toggleSidebar();" id="burger">
+		</div>
+		<ul>
+			<li href="">Home</li>
+			<li href="">About Me</li>
+			<li href="">Pieces</li>
+			<li href="">Social</li>
+		</ul>
+	</div>
+
+	<h1 id="Title">Sophia Art</h1>
+
+	<script type="text/javascript">
+		function toggleSidebar() {
+			document.getElementById("sideBar").classList.toggle("active");
+			document.getElementById("burger").classList.toggle("active");
+			document.getElementById('body').classList.toggle("active");
+		}
+	</script>
 </body>
 </html>
