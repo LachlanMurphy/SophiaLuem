@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sohpia Luem</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body id="body">
+	<div id="coverDiv"></div>
+	<div id="sideBar">
+		<div class="toggle-btn" onclick="toggleSidebar();" id="burger">
+		</div>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About Me</a></li>
+			<li><a href="">Pieces</a></li>
+			<li><a href="">Social</a></li>
+		</ul>
+	</div>
+
+	<h1 id="Title">Sophia Art</h1>
+	<script type="text/javascript">
+		function toggleSidebar() {
+			document.getElementById("sideBar").classList.toggle("active");
+			document.getElementById("burger").classList.toggle("active");
+			document.getElementById('coverDiv').classList.toggle("active");
+		}
+	</script>
+</body>
+</html>
