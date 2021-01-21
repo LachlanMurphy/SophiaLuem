@@ -1,6 +1,9 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 body {
@@ -22,9 +25,6 @@ body {
 	background-color: black;
 	transition: 1000ms;
 	left: -40%;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 }
 
 #sideBar.active {
