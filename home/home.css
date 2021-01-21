@@ -75,7 +75,7 @@ body {
 	height: 135px;
 	left: calc(50% - 250px);
 	top: calc(40% - 67.5px);
-	border: 5px solid white;
+	border: 5px solid rgb(120,118,150);
 	background-color: rgba(20, 50, 200, 0.95);
 	text-align: center;
 	font-size: 50;
