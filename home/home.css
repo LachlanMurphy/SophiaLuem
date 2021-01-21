@@ -22,6 +22,9 @@ body {
 	background-color: black;
 	transition: 1000ms;
 	left: -25%;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;
 }
 
 #sideBar.active {
