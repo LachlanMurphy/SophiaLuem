@@ -17,26 +17,32 @@ body {
 
 #sideBar {
 	position: fixed;
-	width: 200px;
+	width: 25%;
 	height: 100%;
 	background-color: black;
 	transition: 1000ms;
-	left: -200px;
+	left: -25%;
 }
 
 #sideBar.active {
-	left: 0px;
+	left: 0%;
 }
 
 #sideBar ul li {
 	padding: 10px 15px;
 	border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+	justify-content: center;
+}
+
+#sideBar ul {
+	text-align: center;
+	background-color: black;
 }
 
 #sideBar ul a {
 	color: white;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 40px;
 	font-family: arial;
 }
 
@@ -55,7 +61,7 @@ body {
 	cursor: pointer;
 	position: absolute;
 	top: 20px;
-	left: 210px;
+	left: calc(100% + 20px);
 	transition: 500ms;
 }
 
@@ -103,6 +109,22 @@ body {
 	width: 50px;
 	height: 50px;
 	left: calc(50% - 25px);
-	top: 90%;
+	top: calc(100% - 65px);
 	cursor: pointer;
+}
+
+#subPieces {
+	border: 5px solid green;
+	border-radius: 5px;
+	position: absolute;
+	top: 135px;
+	left: calc(-100% - 10px);
+	width: 100%;
+	background-color: black; 
+	transition: 1000ms;
+}
+
+#subPieces.active {
+	left: 100%;
+	transition: 1000ms;
 }

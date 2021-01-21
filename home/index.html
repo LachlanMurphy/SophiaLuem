@@ -13,12 +13,27 @@
 	<div id="sideBar">
 		<div class="toggle-btn" onclick="toggleSidebar();" id="burger">
 		</div>
-		<ul>
+		<ul id="mainList">
 			<li><a href="">Home</a></li>
 			<li><a href="">About Me</a></li>
-			<li><a href="">Pieces</a></li>
-			<li><a href="">Social</a></li>
+			<li><a onclick="togglePieces();" style="cursor: pointer;">Pieces</a></li>
+			
+					<li><a href="">Other Pages 1</a></li>
+					<li><a href="">Other Pages 2</a></li>
+					<li><a href="">Other Pages 3</a></li>
+				
 		</ul>
+
+		<div id="subPieces">
+			<ul>
+				<li><a href="">Photos</a></li>
+				<li><a href="">Art</a></li>
+				<li><a href="">ETC 1</a></li>
+				<li><a href="">ETC 2</a></li>
+				<li><a href="">ETC 3</a></li>
+			</ul>
+		</div>
+		
 		<a href="https://www.instagram.com/sluem_art/" target="_blank"><img src="instagram.png" id="instagramIcon" onclik=""></a>
 	</div>
 
@@ -26,7 +41,14 @@
 		function toggleSidebar() {
 			document.getElementById("sideBar").classList.toggle("active");
 			document.getElementById("burger").classList.toggle("active");
-			document.getElementById('coverDiv').classList.toggle("active");
+			document.getElementById("coverDiv").classList.toggle("active");
+			if (document.getElementById("subPieces").classList == "active") {
+				document.getElementById("subPieces").classList.toggle("active");
+			}
+		}
+
+		function togglePieces() {
+			document.getElementById("subPieces").classList.toggle("active");
 		}
 	</script>
 </body>
