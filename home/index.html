@@ -25,7 +25,7 @@
 		<div id="subPieces">
 			<ul>
 				<li><a href="">Photography</a></li>
-				<li><a http-equiv="refresh" content="0; url=https://lachlanmurphy.github.io/SophiaLuem/ArtForSale/">Art For Sale</a></li>
+				<li><a onmousedown="sendToArtForSale();">Art For Sale</a></li>
 				<li><a href="">Art Gallery</a></li>
 			</ul>
 		</div>
@@ -45,6 +45,13 @@
 
 		function togglePieces() {
 			document.getElementById("subPieces").classList.toggle("active");
+		}
+
+		function sendToArtForSale() {
+			var elem = document.createElement('meta');
+			elem.setAttribute('http-equiv', 'refresh');
+			elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/ArtForSale/');
+			document.getElementsByTagName('head')[0].appendChild(elem);
 		}
 	</script>
 </body>
