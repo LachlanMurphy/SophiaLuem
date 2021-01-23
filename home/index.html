@@ -2,39 +2,35 @@
 <html>
 <head>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 	<title>Sohpia Luem</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="icon" href="../assets/SophiaIcon.png">
 </head>
 <body id="body">
 	<div id="Title">Sophia Art</div>
 
 	<div id="coverDiv" onclick="toggleSidebar();"></div>
 	<div id="sideBar">
-		<div class="toggle-btn" onclick="toggleSidebar();" id="burger">
+		<div class="toggle-btn" onmousedown="toggleSidebar();" id="burger">
 		</div>
 		<ul id="mainList">
 			<li><a href="">Home</a></li>
 			<li><a href="">About Me</a></li>
-			<li><a onclick="togglePieces();" style="cursor: pointer;">Pieces</a></li>
-			
-					<li><a href="">Other Pages 1</a></li>
-					<li><a href="">Other Pages 2</a></li>
-					<li><a href="">Other Pages 3</a></li>
+			<li><a onmousedown="togglePieces();" style="cursor: pointer;">Pieces</a></li>
+			<li><a href="">Contact Me</a></li>
 				
 		</ul>
 
 		<div id="subPieces">
 			<ul>
-				<li><a href="">Photos</a></li>
-				<li><a href="">Art</a></li>
-				<li><a href="">ETC 1</a></li>
-				<li><a href="">ETC 2</a></li>
-				<li><a href="">ETC 3</a></li>
+				<li><a href="">Photography</a></li>
+				<li><a href="">Art For Sale</a></li>
+				<li><a href="">Art Gallery</a></li>
 			</ul>
 		</div>
 		
-		<a href="https://www.instagram.com/sluem_art/" target="_blank"><img src="instagram.png" id="instagramIcon" onclik=""></a>
+		<a href="https://www.instagram.com/sluem_art/" target="_blank"><img src="../assets/instagram.png" id="instagramIcon" onclik=""></a>
 	</div>
 
 	<script type="text/javascript">

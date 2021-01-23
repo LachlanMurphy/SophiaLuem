@@ -7,7 +7,7 @@
 }
 
 body {
-	background: url(SophiaBackground.png);
+	background: url(../assets/SophiaBackground.png);
 	background-position: center;
 	overflow: hidden;
 	animation: background_anim 150s linear infinite;
@@ -57,7 +57,7 @@ body {
 #sideBar .toggle-btn {
 	width: 60px;
 	height: 60px;
-	background: url(https://i.ibb.co/HrfVRcx/menu.png);
+	background: url(../assets/menu.png);
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: center;
@@ -69,7 +69,7 @@ body {
 }
 
 #sideBar .toggle-btn.active {
-	background: url(https://i.ibb.co/rt3HybH/menu.png);
+	background: url(../assets/openMenu.png);
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: center;
