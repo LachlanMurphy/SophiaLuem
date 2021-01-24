@@ -18,8 +18,6 @@ function relocate(destination) {
 	document.getElementsByTagName('head')[0].appendChild(elem);
 }
 
-console.log("hey");
-	var x = setInterval( function() {
-		console.log("hey inside");
-		document.getElementsByTagName("body")[0].classList.toggle("active");
-	}, 5 * 1000);
+var x = setInterval( function() {
+	document.getElementsByTagName("body")[0].classList.toggle("active");
+}, 10 * 1000);
