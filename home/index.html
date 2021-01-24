@@ -6,53 +6,19 @@
 	<title>Sohpia Luem</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<link rel="icon" href="../assets/SophiaIcon.png">
+	<link rel="stylesheet" type="text/css" href="../templatePage/template.css">
 </head>
+<script type="text/javascript" src="../templatePage/templateHTML.js"></script>
 <body id="body">
 	<div id="Title">Sophia Art</div>
 
-	<div id="coverDiv" onclick="toggleSidebar();"></div>
-	<div id="sideBar">
-		<div class="toggle-btn" onmousedown="toggleSidebar();" id="burger">
-		</div>
-		<ul id="mainList">
-			<li><a href="">Home</a></li>
-			<li><a href="">About Me</a></li>
-			<li><a onmousedown="togglePieces();" style="cursor: pointer;">Pieces</a></li>
-			<li><a href="">Contact Me</a></li>
-				
-		</ul>
+	
+	<div w3-include-html="https://sophialuem.lachlangmurphy.com/templatePage/template.html"></div>
 
-		<div id="subPieces">
-			<ul>
-				<li><a href="">Photography</a></li>
-				<li><a onmousedown="sendToArtForSale();">Art For Sale</a></li>
-				<li><a href="">Art Gallery</a></li>
-			</ul>
-		</div>
-		
-		<a href="https://www.instagram.com/sluem_art/" target="_blank"><img src="../assets/instagram.png" id="instagramIcon" onclik=""></a>
-	</div>
 
-	<script type="text/javascript">
-		function toggleSidebar() {
-			document.getElementById("sideBar").classList.toggle("active");
-			document.getElementById("burger").classList.toggle("active");
-			document.getElementById("coverDiv").classList.toggle("active");
-			if (document.getElementById("subPieces").classList == "active") {
-				document.getElementById("subPieces").classList.toggle("active");
-			}
-		}
-
-		function togglePieces() {
-			document.getElementById("subPieces").classList.toggle("active");
-		}
-
-		function sendToArtForSale() {
-			var elem = document.createElement('meta');
-			elem.setAttribute('http-equiv', 'refresh');
-			elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/ArtForSale/');
-			document.getElementsByTagName('head')[0].appendChild(elem);
-		}
-	</script>
+	<script type="text/javascript" src="../templatePage/template.js"></script>
+	<script>
+includeHTML();
+</script>
 </body>
 </html>
