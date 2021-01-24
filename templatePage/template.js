@@ -21,7 +21,3 @@ function relocate(destination) {
 var x = setInterval( function() {
 	document.getElementsByTagName("body")[0].classList.toggle("active");
 }, 15 * 1000);
-
-console.log(document.getElementById("pageTitle").height);
-document.getElementById("pageTitle").height = document.getElementById("pageTitle").height + "10px";
-document.getElementById("pageTitle").width = document.getElementById("pageTitle").width + "10px";
