@@ -14,6 +14,6 @@ function togglePieces() {
 function relocate(destination) {
 	var elem = document.createElement('meta');
 	elem.setAttribute('http-equiv', 'refresh');
-	elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/' + toString(destination) + '/');
+	elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/' + destination + '/');
 	document.getElementsByTagName('head')[0].appendChild(elem);
 }
