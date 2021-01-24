@@ -17,3 +17,9 @@ function relocate(destination) {
 	elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/' + destination + '/');
 	document.getElementsByTagName('head')[0].appendChild(elem);
 }
+
+console.log("hey");
+	var x = setInterval( function() {
+		console.log("hey inside");
+		document.getElementByTagName("body")[0].classList.toggle("active");
+	}, 5 * 1000);
