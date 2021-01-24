@@ -21,5 +21,5 @@ function relocate(destination) {
 console.log("hey");
 	var x = setInterval( function() {
 		console.log("hey inside");
-		document.getElementByTagName("body")[0].classList.toggle("active");
+		document.getElementsByTagName("body")[0].classList.toggle("active");
 	}, 5 * 1000);
