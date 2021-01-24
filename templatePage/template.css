@@ -42,14 +42,15 @@ body {
 	background-color: black;
 }
 
-#sideBar ul a {
+#sideBar ul p {
+	cursor: pointer;
 	color: white;
 	text-decoration: none;
 	font-size: 40px;
 	font-family: arial;
 }
 
-#sideBar ul a:hover {
+#sideBar ul p:hover {
 	color: blue;
 	transition: 500ms;
 }
@@ -114,7 +115,8 @@ body {
 	background-color: white;
 }
 
-#subPieces ul a {
+#subPieces ul p {
+	cursor: pointer;
 	color: black;
 }
 

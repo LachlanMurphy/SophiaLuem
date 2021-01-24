@@ -1,21 +1,20 @@
 <div id="coverDiv" onclick="toggleSidebar();"></div>
 <div id="sideBar">
-	<div class="toggle-btn" onmousedown="toggleSidebar();" id="burger">
-	</div>
+	<div class="toggle-btn" onmousedown="toggleSidebar();" id="burger"></div>
+
 	<ul id="mainList">
-		<li><a href="">Home</a></li>
-		<li><a href="">About Me</a></li>
-		<li><a onmousedown="togglePieces();" style="cursor: pointer;">Pieces</a></li>
-		<li><a href="">Contact Me</a></li>	
+		<li><p onmousedown="relocate(home);">Home</p></li>
+		<li><p onmousedown="relocate(AboutMe);">About Me</p></li>
+		<li><p onmousedown="togglePieces();">Pieces</p></li>
 	</ul>
 
 	<div id="subPieces">
 		<ul>
-			<li><a href="">Photography</a></li>
-			<li><a style="cursor: pointer;" onmousedown="sendToArtForSale();">Art For Sale</a></li>
-			<li><a href="">Art Gallery</a></li>
+			<li><p href="">Photography</p></li>
+			<li><p onmousedown="relocate(ArtForSale);">Art For Sale</p></li>
+			<li><p onmousedown="relocate(ArtGallery);">Art Gallery</p></li>
 		</ul>
 	</div>
 		
-	<a href="https://www.instagram.com/sluem_art/" target="_blank"><img src="https://sophialuem.lachlangmurphy.com/assets/instagram.png" id="instagramIcon" onclik=""></a>
+	<a href="https://www.instagram.com/sluem_art/" target="_blank"><img src="https://sophialuem.lachlangmurphy.com/assets/instagram.png" id="instagramIcon"></a>
 </div>

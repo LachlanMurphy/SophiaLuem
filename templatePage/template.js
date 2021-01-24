@@ -11,9 +11,9 @@ function togglePieces() {
 	document.getElementById("subPieces").classList.toggle("active");
 }
 
-function sendToArtForSale() {
+function relocate(destination) {
 	var elem = document.createElement('meta');
 	elem.setAttribute('http-equiv', 'refresh');
-	elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/ArtForSale/');
+	elem.setAttribute('content', '0; url=https://lachlanmurphy.github.io/SophiaLuem/' + toString(destination) + '/');
 	document.getElementsByTagName('head')[0].appendChild(elem);
 }
