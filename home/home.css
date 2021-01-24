@@ -1,15 +1,30 @@
 #Title {
 	border-radius: 10px;
 	font-size: 75px;
-	font-family: 'Cedarville Cursive', cursive;
 	position: absolute;
 	width: 500px;
-	height: 135px;
+	height: 200px;
 	left: calc(50% - 250px);
-	top: calc(40% - 67.5px);
+	top: calc(20% - 100px);
 	border: 5px solid rgb(120,118,150);
-	background-color: rgba(20, 50, 200, 0.95);
+	background-color: rgba(0, 191, 255, 0.8);
 	text-align: center;
 	font-size: 50;
 	padding-top: 20px;
+}
+
+#title_SophiaLuem {
+	font-family: 'Fraunces', serif;
+	color: white;
+}
+
+#title_Art {
+	font-family: 'Dancing Script', cursive;
+	color: white;
+}
+
+#title_Contact {
+	color: black;
+	font-size: 35px;
+	font-family: 'Fraunces', serif;
 }
