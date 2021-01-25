@@ -4,7 +4,6 @@
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	position: fixed;
 }
 
 @keyframes background_animTwo {
@@ -28,6 +27,7 @@
 	overflow: hidden;
 	transition: 5s;
 	z-index: -2;
+	position: fixed;
 }
 
 #background2 {
@@ -43,6 +43,7 @@
 	transition: 5s;
 	z-index: -1;
 	opacity: 0.0;
+	position: fixed;
 }
 
 #background2.active {
