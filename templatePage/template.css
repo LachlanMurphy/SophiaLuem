@@ -6,6 +6,16 @@
 	-ms-user-select: none;
 }
 
+@keyframes background_animTwo {
+	0% {background-position: -1992px 0;}
+	100% {background-position: 0 0;}
+}
+
+@keyframes background_anim {
+	0% {background-position: -2226px 0;}
+	100% {background-position: 0 0;}
+}
+
 body {
 	background: url(https://sophialuem.lachlangmurphy.com/assets/SophiaBackground_1.png);
 	background-position: center;
@@ -32,16 +42,6 @@ body {
 #background2.active {
 	transition: 5s;
 	opacity: 1;
-}
-
-@keyframes background_animTwo {
-	0% {background-position: -1992px 0;}
-	100% {background-position: 0 0;}
-}
-
-@keyframes background_anim {
-	0% {background-position: -2226px 0;}
-	100% {background-position: 0 0;}
 }
 
 #pageTitle {
