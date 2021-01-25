@@ -10,7 +10,6 @@
 	0% {background-position: -1992px 0;}
 	100% {background-position: 0 0;}
 }
-
 @keyframes background_anim {
 	0% {background-position: -2226px 0;}
 	100% {background-position: 0 0;}
@@ -20,8 +19,8 @@ body {
 	background: url(https://sophialuem.lachlangmurphy.com/assets/SophiaBackground_1.png);
 	background-position: center;
 	overflow: hidden;
-	animation: background_anim 100s linear infinite;
-	transition: 5s;
+	transition: background-image 2s ease-in-out;
+	background-repeat: no-repeat;
 }
 
 #background2 {
@@ -31,9 +30,9 @@ body {
 	height: 100%;
 	width: 100%;
 	background: url(https://sophialuem.lachlangmurphy.com/assets/SophiaBackground_2.png);
+	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
-	animation: background_animTwo 100s linear infinite;
 	transition: 5s;
 	z-index: -1;
 	opacity: 0.0;
@@ -184,4 +183,40 @@ h5 {
 	font-size: 10px;
 	color: white;
 	font-family: timesnewroman;
+}
+
+#loadingScreen {
+	z-index: 5;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+@keyframes spinner {
+	0% {
+		transform: translate3d(-50%, -50%, 0) rotate(0deg);
+	}
+	
+	100% {
+		transform: translate3d(-50%, -50%, 0) rotate(360deg);
+	}
+}
+
+#loadingScreen .spin::before {
+	animation: 1.5s linear infinite spinner;
+	animation-play-state: inherit;
+	border: solid 5px #cfd0d1;
+	border-bottom-color: #1c87c9;
+	border-radius: 50%;
+	content: "";
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 40px;
+	will-change: transform;
 }

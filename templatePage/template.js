@@ -19,8 +19,8 @@ function relocate(destination) {
 }
 
 var x = setInterval( function() {
-	document.getElementById("background2").classList.toggle("active");
-}, 15 * 1000);
+	document.getElementById("background2").classList.toggle('active');
+}, 5 * 1000);
 
 let stateCheck = setInterval(() => {
   if (document.readyState === 'complete') {
@@ -30,9 +30,14 @@ let stateCheck = setInterval(() => {
     var css = document.createElement('link');
 	css.setAttribute('rel', 'stylesheet');
 	css.setAttribute('type', 'text/css');
-	css.setAttribute('href', '../templatePage/template.css');
+	css.setAttribute('href', '../templatePage/animation.css');
 	document.getElementsByTagName('head')[0].appendChild(css);
 
-	document.getElementById("loadingScreen").style.display = "none";
+	document.getElementById("background2").style.animation = "background_animTwo 150s linear infinite";
+	document.getElementsByTagName("body")[0].style.animation = "background_anim 150s linear infinite";
+	document.getElementById("background2").style.backgroundRepeat = "repeat";
+	document.getElementsByTagName("body")[0].style.backgroundRepeat = "repeat";
+
+	document.getElementById('loadingScreen').style.display = "none";
   }
 }, 100);
