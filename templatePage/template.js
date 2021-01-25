@@ -25,6 +25,14 @@ var x = setInterval( function() {
 let stateCheck = setInterval(() => {
   if (document.readyState === 'complete') {
     clearInterval(stateCheck);
-    document.getElementById("loadingScreen").style.display = "none";
+
+    //Add CSS. This is added later to reduce load times.
+    var css = document.createElement('link');
+	css.setAttribute('rel', 'stylesheet');
+	css.setAttribute('type', 'text/css');
+	css.setAttribute('href', '../templatePage/template.css');
+	document.getElementsByTagName('head')[0].appendChild(css);
+
+	document.getElementById("loadingScreen").style.display = "none";
   }
 }, 100);
