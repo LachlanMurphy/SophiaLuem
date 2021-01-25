@@ -2,16 +2,34 @@
 	position: absolute;
 	left: 100px;
 	top: 250px;
+	right: 100px;
+	text-align: center;
 }
 
-img:hover {
-	transform: scale(1.25);
+.column p {
+	opacity: 0;
+	transition: 1s;
+	background-color: white;
+}
+
+.column div:hover > p {
+	opacity: 1;
+	transition: 1s;
+}
+
+.column div {
+	transition: 1s;
+}
+
+.column div:hover {
+	transform: scale(1.5);
 	transition: 1s;
 	z-index: 2;
 }
 
 img {
-	transition: 1s;
+	width: 90%;
+	height: 90%;
 }
 
 .row {
@@ -22,8 +40,7 @@ img {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  
   padding: 0 4px;
 }
 
