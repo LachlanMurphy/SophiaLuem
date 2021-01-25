@@ -21,3 +21,10 @@ function relocate(destination) {
 var x = setInterval( function() {
 	document.getElementById("background2").classList.toggle("active");
 }, 15 * 1000);
+
+let stateCheck = setInterval(() => {
+  if (document.readyState === 'complete') {
+    clearInterval(stateCheck);
+    document.getElementById("loadingScreen").style.display = "none";
+  }
+}, 100);
