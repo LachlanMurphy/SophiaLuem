@@ -20,7 +20,7 @@ function relocate(destination) {
 
 var x = setInterval( function() {
 	document.getElementById("background2").classList.toggle('active');
-}, 5 * 1000);
+}, 15 * 1000);
 
 let stateCheck = setInterval(() => {
   if (document.readyState === 'complete') {
