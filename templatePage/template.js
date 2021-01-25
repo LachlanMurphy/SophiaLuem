@@ -27,9 +27,9 @@ let stateCheck = setInterval(() => {
     clearInterval(stateCheck);
 
 	document.getElementById("background2").style.animation = "background_animTwo 150s linear infinite";
-	document.getElementsByTagName("body")[0].style.animation = "background_anim 150s linear infinite";
+	document.getElementById('background1').style.animation = "background_anim 150s linear infinite";
 	document.getElementById("background2").style.backgroundRepeat = "repeat";
-	document.getElementsByTagName("body")[0].style.backgroundRepeat = "repeat";
+	document.getElementById('background1').style.backgroundRepeat = "repeat";
 
 	document.getElementById('loadingScreen').style.display = "none";
   }

@@ -15,13 +15,19 @@
 	100% {background-position: 0 0;}
 }
 
-body {
-	display: inline-block;
+#background2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
 	background: url(https://sophialuem.lachlangmurphy.com/assets/SophiaBackground_1.png);
+	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
-	transition: background-image 2s ease-in-out;
-	background-repeat: no-repeat;
+	transition: 5s;
+	z-index: -2;
+	opacity: 0.0;
 }
 
 #background2 {
