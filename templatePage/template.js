@@ -19,5 +19,5 @@ function relocate(destination) {
 }
 
 var x = setInterval( function() {
-	document.getElementsByTagName("body")[0].classList.toggle("active");
+	document.getElementById("background2").classList.toggle("active");
 }, 15 * 1000);
