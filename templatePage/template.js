@@ -33,6 +33,6 @@ let stateCheck = setInterval(() => {
 	css.setAttribute('href', '../templatePage/template.css');
 	document.getElementsByTagName('head')[0].appendChild(css);
 
-	document.getElementById("loadingScreen").style.display = "none";
+	css.onreadystatechange = document.getElementById("loadingScreen").style.display = "none";
   }
 }, 100);
