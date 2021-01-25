@@ -95,6 +95,7 @@
 	text-decoration: none;
 	font-size: 40px;
 	font-family: arial;
+	transition: 500ms;
 }
 
 #sideBar ul p:hover {
