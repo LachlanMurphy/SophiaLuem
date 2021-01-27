@@ -19,13 +19,16 @@
 
 .column div {
 	transition: 1s;
-	z-index: 0;
 }
 
 .column div:hover {
 	transform: scale(1.5);
 	transition: 1s;
 	z-index: 2;
+}
+
+.column div {
+	z-index: 0;
 }
 
 img {
