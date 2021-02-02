@@ -18,6 +18,8 @@
 }
 
 .column div {
+	position: absolute;
+	z-index: 0;
 	transition: 1s;
 }
 
@@ -25,10 +27,6 @@
 	transform: scale(1.5);
 	transition: 1s;
 	z-index: 2;
-}
-
-.column div {
-	z-index: 0;
 }
 
 img {
