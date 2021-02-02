@@ -18,7 +18,7 @@
 }
 
 .column div {
-	position: absolute;
+	position: static;
 	z-index: 0;
 	transition: 1s;
 }
