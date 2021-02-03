@@ -23,7 +23,7 @@ var x = setInterval( function() {
 }, 15 * 1000);
 
 let stateCheck = setInterval(() => {
-  if (document.readyState === 'complete') {
+  if (!(document.contains(document.getElementById("background2")) && document.getElementById("siteCreator").readyState === "complete") || document.getElementById("background2").readyState === 'complete') {
     clearInterval(stateCheck);
 
 	document.getElementById("background2").style.animation = "background_animTwo 150s linear infinite";
@@ -33,4 +33,4 @@ let stateCheck = setInterval(() => {
 
 	document.getElementById('loadingScreen').style.display = "none";
   }
-}, 100);
+});
