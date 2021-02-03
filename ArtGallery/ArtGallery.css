@@ -20,7 +20,6 @@
 .column div {
 	position: relative;
 	transition: 1s;
-	z-index: 2;
 }
 
 .column div:hover {
