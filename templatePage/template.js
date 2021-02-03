@@ -32,7 +32,7 @@ let stateCheck = setInterval(() => {
 	document.getElementById('background1').style.backgroundRepeat = "repeat";
 
 	document.getElementById('loadingScreen').style.display = "none";
-  } else if (window.getComputedStyle( document.body ,null).getPropertyValue('background-color') !== "rgba(0, 0, 0, 0)") {
+  } else if (document.readyState == "complete") {
   	clearInterval(stateCheck);
 
   	document.getElementById('loadingScreen').style.display = "none";
