@@ -1,3 +1,7 @@
+body {
+	background-color: grey;
+}
+
 #artArea {
 	position: absolute;
 	left: 100px;
