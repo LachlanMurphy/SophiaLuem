@@ -23,7 +23,7 @@ var x = setInterval( function() {
 }, 15 * 1000);
 
 let stateCheck = setInterval(() => {
-  if (document.getElementById("background2").readyState === 'complete') {
+  if (document.contains(document.getElementById("background2"))) {
     clearInterval(stateCheck);
 
 	document.getElementById("background2").style.animation = "background_animTwo 150s linear infinite";
@@ -32,7 +32,7 @@ let stateCheck = setInterval(() => {
 	document.getElementById('background1').style.backgroundRepeat = "repeat";
 
 	document.getElementById('loadingScreen').style.display = "none";
-  } else if (!(document.contains(document.getElementById("background2"))) && document.getElementById("siteCreator").readyState === "complete") {
+  } else if (document.readyState === "complete") {
   	clearInterval(stateCheck);
 
   	document.getElementById('loadingScreen').style.display = "none";
