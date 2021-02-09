@@ -2,7 +2,7 @@ body {
 	background-color: grey;
 }
 
-#artArea {
+.artArea {
 	position: absolute;
 	left: 100px;
 	top: 250px;
